@@ -19,13 +19,34 @@ namespace PH.LoggingExtensions.Test
         {
             var logger = Scope.Resolve<ILogger<TraceUnitTest>>();
 
-            var wr = new Wr(logger);
-            wr.Flush();
+
+            logger.LogTrace("a prev trace at {now}", DateTime.Now);
+            
+            logger.PippoLog("sto cazzo {id}", Guid.NewGuid());
+
+
+            new TraceBuilder()
+                .Trace("a param date {dt}")
+                .Trace(DateTime.Now)
+                .Trace("another")
+                .Trace("a param guid {gd}")
+                .Trace(Guid.NewGuid())
+                .Trace("another msg")
+                .Flush(logger);
+            
+            
+              
+            
+           
+            
+                                 //.FlushTo(logger);
+            
+            
             
             
             logger.LogTrace("a default trace");
             
-            logger.LogTrace("a prev trace at {now}", DateTime.Now);
+            
 
             ObjectClass obj = new ObjectClass() {DateTime = DateTime.UtcNow, Message = "a message"};
             
