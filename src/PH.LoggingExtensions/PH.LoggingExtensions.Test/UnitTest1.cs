@@ -10,8 +10,21 @@ using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace PH.LoggingExtensions.Test
 {
+    public static class TraceLogMessageExtensions
+    {
+        private static Func<Microsoft.Extensions.Logging.ILogger, DateTime, IDisposable> _processingWorkScope;
+        
+        public static IDisposable ProcessingWorkScope(
+            this Microsoft.Extensions.Logging.ILogger logger, DateTime time) =>
+            _processingWorkScope(logger, time);
+    }
+    public class TraceLogMessage
+    {
+        
+        
+        
+    }
 
-    
     public class TraceUnitTest : BaseUnitTest
     {
         [Fact]

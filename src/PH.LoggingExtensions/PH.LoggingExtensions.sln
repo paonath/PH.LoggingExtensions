@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.LoggingExtensions", "PH.LoggingExtensions\PH.LoggingExtensions.csproj", "{4166007E-D8D8-426E-ABE8-BDF34490D53D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PH.LoggingExtensions", "PH.LoggingExtensions\PH.LoggingExtensions.csproj", "{4166007E-D8D8-426E-ABE8-BDF34490D53D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.LoggingExtensions.Test", "PH.LoggingExtensions.Test\PH.LoggingExtensions.Test.csproj", "{7D3C2A0D-6D04-4991-A93D-7110574782E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PH.LoggingExtensions.Test", "PH.LoggingExtensions.Test\PH.LoggingExtensions.Test.csproj", "{7D3C2A0D-6D04-4991-A93D-7110574782E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.FakeTesting", "PH.FakeTesting\PH.FakeTesting.csproj", "{667CED30-3212-4692-9C57-96FC2723B9A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7D3C2A0D-6D04-4991-A93D-7110574782E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3C2A0D-6D04-4991-A93D-7110574782E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3C2A0D-6D04-4991-A93D-7110574782E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667CED30-3212-4692-9C57-96FC2723B9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667CED30-3212-4692-9C57-96FC2723B9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667CED30-3212-4692-9C57-96FC2723B9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667CED30-3212-4692-9C57-96FC2723B9A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
