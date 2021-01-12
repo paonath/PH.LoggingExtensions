@@ -1,4 +1,4 @@
-# PH.LoggingExtensions
+# PH.LoggingExtensions [![NuGet Badge](https://buildstats.info/nuget/PH.LoggingExtensions)](https://www.nuget.org/packages/PH.LoggingExtensions/)
 
 Useful extension methods for work with ILogger
 
