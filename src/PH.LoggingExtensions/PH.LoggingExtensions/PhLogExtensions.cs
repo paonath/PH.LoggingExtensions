@@ -12,16 +12,14 @@ namespace PH.LoggingExtensions
     /// </summary>
     public static class PhLogExtensions
     {
-        //public static IDisposable BeginNamedObjectScope(this ILogger logger, string scopeName, object objectParam)
-        //{
-        //    dynamic newobj = new ExpandoObject();
-        //    var     exDict = newobj as IDictionary<string, object>;
-        //    exDict.Add(scopeName,objectParam);
-
-
-
-        //    return logger.BeginScope(exDict);
-        //}
+        /// <summary>Begins the named object scope.</summary>
+        /// <param name="logger">The logger.</param>
+        /// <param name="scopeName">Name of the scope.</param>
+        /// <param name="objectParam">The object parameter.</param>
+        /// <returns>IDisposable scope</returns>
+        public static IDisposable BeginNamedObjectScope(this ILogger logger, string scopeName, object objectParam)
+            => logger.BeginScope(new KeyValuePair<string, object>(scopeName, objectParam));
+        
 
         /// <summary>Begins the source scope context.</summary>
         /// <param name="logger">The logger.</param>

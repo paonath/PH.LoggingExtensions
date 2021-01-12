@@ -7,7 +7,7 @@
   <PropertyGroup>
     <Authors>Paolo Innocenti</Authors>
     <Copyright>Copyright 2021 (c) Paolo Innocenti - paonath@gmail.com </Copyright>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>0.0.2</PackageVersion>
 
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -20,7 +20,7 @@
       Useful extension methods for work with ILogger
     </Description>
     <PackageReleaseNotes>
-      First Release.
+      Add BeginNamedObjectScope
     </PackageReleaseNotes>
 
 
@@ -30,7 +30,7 @@
    
     <RepositoryUrl>https://github.com/paonath/PH.LoggingExtensions</RepositoryUrl>
     <PackageProjectUrl>https://github.com/paonath/PH.LoggingExtensions</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/paonath/Icons/master/nuget_es_img.png</PackageIconUrl>
+    
 
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
 
@@ -49,7 +49,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[2.0.0,)" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 

@@ -8,13 +8,14 @@ using Xunit.Abstractions;
 
 namespace PH.LoggingExtensions.Test
 {
+   
     public class ScopeTest : BaseUnitTest
     {
         public ScopeTest(ITestOutputHelper output) : base(output, LogLevel.Trace)
         {
         }
 
-        
+       
         [Fact]
         public void Test1()
         {
@@ -107,16 +108,18 @@ namespace PH.LoggingExtensions.Test
             Assert.Equal(stateGuid, g);
         }
 
-        //[Fact]
-        //public void TestNamedObjectScope()
-        //{
-        //    var logger = Scope.Resolve<ILogger<ScopeTest>>();
-        //    Guid g = Guid.NewGuid();
+        [Fact]
+        public void TestNamedObjectScope()
+        {
+            var logger = Scope.Resolve<ILogger<ScopeTest>>();
+            Guid g = Guid.NewGuid();
 
-        //    using (var scope = logger.BeginNamedObjectScope("NameOfTheScope", g))
-        //    {
-        //        logger.LogTrace("A trace log");
-        //    }
-        //}
+            using (var scope = logger.BeginNamedObjectScope("NameOfTheScope", g))
+            {
+                var dbg = scope;
+
+                logger.LogTrace("A trace log");
+            }
+        }
     }
 }
