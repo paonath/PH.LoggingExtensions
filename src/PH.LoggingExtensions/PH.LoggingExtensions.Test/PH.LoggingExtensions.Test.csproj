@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PH.LoggingExtensions.Nlog\PH.LoggingExtensions.Nlog.csproj" />
     <ProjectReference Include="..\PH.LoggingExtensions\PH.LoggingExtensions.csproj" />
   </ItemGroup>
 

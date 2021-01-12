@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PH.LoggingExtensions", "PH.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PH.LoggingExtensions.Test", "PH.LoggingExtensions.Test\PH.LoggingExtensions.Test.csproj", "{7D3C2A0D-6D04-4991-A93D-7110574782E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.FakeTesting", "PH.FakeTesting\PH.FakeTesting.csproj", "{667CED30-3212-4692-9C57-96FC2723B9A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH.LoggingExtensions.Nlog", "PH.LoggingExtensions.Nlog\PH.LoggingExtensions.Nlog.csproj", "{B3414E2A-1D18-4439-87CA-25C7B9F47F62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7D3C2A0D-6D04-4991-A93D-7110574782E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3C2A0D-6D04-4991-A93D-7110574782E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3C2A0D-6D04-4991-A93D-7110574782E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{667CED30-3212-4692-9C57-96FC2723B9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{667CED30-3212-4692-9C57-96FC2723B9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{667CED30-3212-4692-9C57-96FC2723B9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{667CED30-3212-4692-9C57-96FC2723B9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3414E2A-1D18-4439-87CA-25C7B9F47F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3414E2A-1D18-4439-87CA-25C7B9F47F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3414E2A-1D18-4439-87CA-25C7B9F47F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3414E2A-1D18-4439-87CA-25C7B9F47F62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

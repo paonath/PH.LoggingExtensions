@@ -13,6 +13,7 @@ namespace PH.LoggingExtensions.Test
     public abstract class BaseUnitTest
     {
         protected ILoggerFactory LoggerFactory;
+        protected NLog.ILogger nLogger;
         
         protected BaseUnitTest(ITestOutputHelper output,Microsoft.Extensions.Logging.LogLevel configuredLevel)
         {
@@ -47,6 +48,8 @@ namespace PH.LoggingExtensions.Test
                 
 
                 NLog.Web.NLogBuilder.ConfigureNLog("nlog.config");
+                nLogger = NLog.LogManager.GetCurrentClassLogger();
+
 
                 services.AddSingleton<ILoggerFactory, LoggerFactory>();
 
